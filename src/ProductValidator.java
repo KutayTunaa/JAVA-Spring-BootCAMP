@@ -1,0 +1,28 @@
+public class ProductValidator {
+    //ürünü incelerken kurallara uygun olup olmadığı vb.
+
+    static {
+        System.out.println("Statik yapıcı blok çalıştı");
+    }
+    public ProductValidator(){
+        System.out.println("yaopıcı blok çalıştı");
+    }
+    public static boolean isValid(Product product) {
+        if (product.price> 0 && !product.name.isEmpty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+       /* public class BaskaBirClass{
+            public static void Sil(){
+                //inner class gruplandırma
+                // amacıyla kullanılır
+            } */
+
+        }
+
+        }
+
+//yapıcı bloklar newleyince çalışıyor...
+
